@@ -1,0 +1,110 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: "raleway";
+}
+body{
+    padding: 0 50px 0 50px
+}
+@font-face {
+    font-family: "raleway";
+    src: url(police/Raleway-VariableFont_wght.ttf),
+        url(police/Raleway-Italic-VariableFont_wght.ttf);
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*responsive body*/
+@media screen and (max-width: 817px){
+    body{
+        padding: 0;
+        font-size: 0.85em;
+    }
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    justify-content: space-between;
+}
+#logoreservia{
+    width:9em;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.navheader {
+    font-size: 1.3em;
+}
+.navheaderlinks:hover{
+    font-weight: bold;
+}
+.group1{
+    padding: 40px 40px 0 40px;
+}
+.group2{
+    padding: 40px 40px 0 40px;
+}
+.lodgingheader{
+    border-top: solid #0065FC;
+}
+.lodgingheader a{
+    color: #0065FC;
+}
+.activitiesheader a:hover{
+    color: #0065FC;
+}
+.activitiesheader:hover{
+    border-top: solid #0065FC;
+}
+.signup a{
+    color: #0065FC;
+    font-weight: bold;
+}
+.signup a:hover{
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/*responsive header*/
+
+@media screen and (max-width: 817px){
+    header{
+        flex-wrap: wrap;
+    }
+    .navheader{
+        width: 100%;
+    }
+    .activitiesheader{
+        border-bottom: solid #F2F2F2;
+    }
+    .lodgingheader{
+        border-bottom: solid #0065FC;
+    }
+    .signup{
+        position: absolute;
+        top: 5px;
+        right: 0px;
+    }
+    nav a:hover{
+        font-size: 1.1em;
+    }
+    .group1{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 40px 10px 20px 10px;
+        border-top: none;
+    }
+    .group1:hover{
+        border-top: none;
+        border-bottom: solid #0065FC;
+    }
+    .group2{
+        padding: 40px 20px 0 20px;
+    }
+}
