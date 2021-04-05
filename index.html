@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Accueil de Reservia</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5cf9a915c6.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header flex">
@@ -15,7 +16,28 @@
             </nav>
         </header>
         <main>
-
+            <section class="research">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div class="searchbar flex">
+                    <div class="gpsiconbox flex">
+                        <i class="fas fa-map-marker-alt gpsicon"></i>
+                    </div>
+                    <input type="search" name="ville" placeholder="Marseille, France" class="input" />
+                    <button type="submit" class="researchbutton"><span class="researchtext">Rechercher</span>
+                        <span class="researchicon"><i class="fas fa-search "></i></span></button>
+                </div>
+                <div class="filtersarea flex">
+                    <h2>Filtres</h2>
+                    <ul class="filtersbox flex">
+                        <li class="filter flex"><i class="fas fa-money-bill-wave-alt filterpic flex"></i>Économique</li>
+                        <li class="filter flex"><i class="fas fa-child filterpic flex"></i>Familial</li>
+                        <li class="filter flex"><i class="fas fa-heart filterpic flex"></i>Romantique</li>
+                        <li class="filter flex"><i class="fas fa-dog filterpic flex"></i>Animaux autorisés</li>
+                    </ul>
+                </div>
+                <p class="infotext flex"><i class="fas fa-info infoicon flex"></i>Plus de 500 logements sont disponibles dans cette villes</p>
+            </section>
         </main>
         <footer>
 
