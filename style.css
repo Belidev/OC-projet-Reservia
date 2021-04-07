@@ -22,13 +22,27 @@ li{
     list-style-type: none;    
 }
 /*responsive body*/
+@media screen and (max-width: 1280px){
+    body{
+        font-size: 0.9em;
+    }
+}
+    @media screen and (max-width:1024px){
+        body{
+            padding: 0 25px 0 25px;
+    }
+}
 @media screen and (max-width: 817px){
     body{
         padding: 0;
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 }
-
+@media screen and (max-width: 525px){
+    h2{
+        font-size: 1.5em;
+    }
+}
 /*header*/
 
 header{
@@ -163,7 +177,7 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 25px 0 25px;
+        padding: 0 15px 0 15px;
         font-size: 1.1em;
     }
     .researchicon{
@@ -245,5 +259,168 @@ h1{
     }
     .filtersbox{
         width: 100%;
+    }
+    .filter{
+        padding-right: 10px;
+    }
+}
+/*lodging section ---lodgingarticle--- */
+.lodgingsection{
+    margin-top: 50px;
+}
+.greystar{
+    color:#F2F2F2;
+}
+.bluestar{
+    color:#0065FC;
+}
+.lodgingarticle{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    width: 65%;
+    padding: 3%;
+    border-radius: 20px;
+}
+.lodgingarticle h2{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.lodgingarticlecard{
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    max-height: 200px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 30px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+.lodgingarticlepicbox{
+    width: 100%;
+    height: 55%;
+}
+.lodgingarticlepic{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.loadgingarticlecardtext{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 45%;
+    padding: 5px;
+}
+.showmore{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*lodgingarticle responsive*/
+
+@media screen and (max-width: 817px){
+    .lodgingarticle{
+        width: 100%;
+        background-color: white;
+    }
+    .lodgingarticlecard{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 525px){
+    .lodgingarticlecard{
+        width: 100%;
+        max-height: 200px;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+}
+
+/*lodgingsection populararticle*/
+
+.populararticle{
+    flex-wrap: wrap;
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 3%;
+    padding: 3%;
+    background-color: #F2F2F2;
+}
+.graphlogo{
+    font-size: 1.8em;
+}
+.populararticleheader{
+    width: 100%;
+    justify-content: space-between;
+}
+.populararticlecard{
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: grey 3px 3px 3px 3px;;
+}
+.populararticlepicbox{
+    width: 55%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.populararticlepic{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+.populararticlecardtext{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 70%;
+}
+.populararticlecardheader{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*responsive populararticle*/
+
+@media  screen and (max-width: 1024px){
+    .lodgingsection{
+        flex-wrap: wrap;
+    }
+    .lodgingarticle{
+        width: 100%;
+    }
+    .populararticle{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    .populararticlecard{
+        width: 30%;
+        margin-top: 25px;
+    }
+}
+@media  screen and (max-width: 817px){
+    .populararticlecard{
+        width: 40%;
+    }
+    .populararticle{
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 525px){
+    .lodgingsection{
+        flex-wrap: wrap-reverse;
+    }
+    .populararticlecard{
+        width: 100%;
+        height: 150px;
+        font-size: 1.2em;
     }
 }
