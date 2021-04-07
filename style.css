@@ -382,7 +382,6 @@ h1{
 }
 .populararticlecardheader{
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 /*responsive populararticle*/
@@ -407,7 +406,7 @@ h1{
 }
 @media  screen and (max-width: 817px){
     .populararticlecard{
-        width: 40%;
+        width: 45%;
     }
     .populararticle{
         justify-content: space-evenly;
@@ -422,5 +421,107 @@ h1{
         width: 100%;
         height: 150px;
         font-size: 1.2em;
+    }
+}
+
+/*activitiessection*/
+
+.activitiessection{
+    margin-top: 50px;
+    width: 100%;
+}
+.activitiesarticle{
+    justify-content: space-between;
+    height: 550px;
+}
+.activitiessection h2{
+    margin-bottom: 25px;
+}
+.activitiesbox{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 100%;
+}
+.activitiescardbig{
+    width: 23%;
+    height: 550px;
+}
+.activitiescardmedium{
+    height: 300px;
+}
+.activitiescardsmall{
+    height: 200px;
+}
+.activitiespicboxbig{
+    height: 500px;
+}
+.activitiespicboxmedium{
+    height: 250px;
+}
+.activitiespicboxsmall{
+    height: 150px;
+}
+.activitiespic{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.activitiestitle{
+    align-items: center;
+    padding-left: 15px;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+}
+.bordershadow{
+    border-radius: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+.widthmax{
+    width:100%;
+}
+@media screen and (max-width: 1024px){
+    .activitiesarticle{
+        flex-wrap: wrap;
+    }
+    .activitiescardbig{
+        width:47%;
+        margin-bottom: 30px;
+    }
+    .activitiesbox{
+        width: 47%;
+    }
+}
+@media screen and (max-width: 817px){
+    .activitiesarticle{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 525px){
+    .activitiessection h2{
+        margin-left: 10px;
+    }
+    .activitiesarticle{
+        align-items: stretch;
+    }
+    .activitiescardbig{
+        width:95%;
+        margin-bottom: 15px;
+    }
+    .activitiescardmedium{
+        margin-bottom: 15px;
+    }
+    .activitiescardsmall{
+        margin-bottom: 15px;
+    }
+    .activitiesbox{
+        width: 95%;
+        height: auto;
+    }
+    .cardheight{
+        height:250px;
+    }
+    .picheight{
+        height: 200px;
     }
 }
