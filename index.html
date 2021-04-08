@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Accueil de Reservia</title>
@@ -9,10 +9,12 @@
     <body>
         <header class="header flex">
             <img src="logo/Reservia@3x.png" id="logoreservia" alt="logo de reservia">
-            <nav class="navheader flex">
-                <ul class="lodgingheader group1"><a class="navheaderlinks" href="#">Hébergements</a></ul>
-                <ul class="activitiesheader group1"><a class="navheaderlinks" href="#">Activités</a></ul>
-                <ul class="signup group2"><a href="#">S'inscrire</a></ul>
+            <nav>
+                <ul class="navheader flex">
+                    <li class="lodgingheader group1"><a class="navheaderlinks" href="#lodgingtitle">Hébergements</a></li>
+                    <li class="activitiesheader group1"><a class="navheaderlinks" href="#activitiestitle">Activités</a></li>
+                    <li class="signup group2"><a href="#">S'inscrire</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -30,17 +32,17 @@
                 <div class="filtersarea flex">
                     <h2>Filtres</h2>
                     <ul class="filtersbox flex">
-                        <li class="filter flex"><i class="fas fa-money-bill-wave-alt filterpic flex"></i>Économique</li>
-                        <li class="filter flex"><i class="fas fa-child filterpic flex"></i>Familial</li>
-                        <li class="filter flex"><i class="fas fa-heart filterpic flex"></i>Romantique</li>
-                        <li class="filter flex"><i class="fas fa-dog filterpic flex"></i>Animaux autorisés</li>
+                        <li class="filter flex"><div class="filterpicbox flex"><i class="fas fa-money-bill-wave-alt filterpic"></i></div>Économique</li>
+                        <li class="filter flex"><div class="filterpicbox flex"><i class="fas fa-child filterpic"></i></div>Familial</li>
+                        <li class="filter flex"><div class="filterpicbox flex"><i class="fas fa-heart filterpic"></i></div>Romantique</li>
+                        <li class="filter flex"><div class="filterpicbox flex"><i class="fas fa-dog filterpic"></i></div>Animaux autorisés</li>
                     </ul>
                 </div>
                 <p class="infotext flex"><i class="fas fa-info infoicon flex"></i>Plus de 500 logements sont disponibles dans cette villes</p>
             </section>
             <section class="lodgingsection flex">
                 <article class="lodgingarticle flex">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 id="lodgingtitle">Hébergements à Marseille</h2>
                     <a class="lodgingarticlecard flex" href="#">
                         <div class="lodgingarticlepicbox flex">
                             <img class="lodgingarticlepic" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge de la Cannebière">
@@ -201,42 +203,42 @@
                 </article>
             </section>
             <section class="activitiessection widthmax">
-                <h2>Activités à Marseille</h2>
+                <h2 id="activitiestitle">Activités à Marseille</h2>
                 <article class="activitiesarticle flex widthmax">
-                    <a class="activitiescardbig bordershadow cardheight">
+                    <a href="#" class="activitiescardbig bordershadow cardheight">
                         <div class="activitiespicboxbig widthmax picheight">
                             <img class="activitiespic widthmax" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo Vieux port">
                         </div>
                         <h3 class="activitiestitle flex">Vieux Port</h3>
                     </a>
                     <div class="activitiesbox flex">
-                        <a class="activitiescardmedium bordershadow widthmax cardheight">
+                        <a href="#" class="activitiescardmedium bordershadow widthmax cardheight">
                             <div class="activitiespicboxmedium widthmax picheight">
                                 <img class="activitiespic widthmax" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues">
                             </div>
                             <h3 class="activitiestitle flex">Fort de Pomègues</h3>
                         </a>
-                        <a class="activitiescardsmall bordershadow widthmax cardheight">
+                        <a href="#" class="activitiescardsmall bordershadow widthmax cardheight">
                             <div class="activitiespicboxsmall widthmax picheight">
                                 <img class="activitiespic widthmax" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo îles du Frioul">
                             </div>
                             <h3 class="activitiestitle flex">îles du Frioul</h3>
                         </a>
                     </div>
-                    <a class="activitiescardbig bordershadow cardheight">
+                    <a href="#" class="activitiescardbig bordershadow cardheight">
                         <div class="activitiespicboxbig widthmax picheight">
                             <img class="activitiespic widthmax" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo Parc National des Calanques">
                         </div>
                         <h3 class="activitiestitle flex">Parc National des Calanques</h3>
                     </a>
                     <div class="activitiesbox flex">
-                        <a class="activitiescardmedium bordershadow widthmax cardheight">
+                        <a href="#" class="activitiescardmedium bordershadow widthmax cardheight">
                             <div class="activitiespicboxmedium widthmax picheight">
                                 <img class="activitiespic widthmax" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo Notre-Dame-De-La-Garde">
                             </div>
                             <h3 class="activitiestitle flex">Notre-Dame-De-La-Garde</h3>
                         </a>
-                        <a class="activitiescardsmall bordershadow widthmax cardheight">
+                        <a href="#" class="activitiescardsmall bordershadow widthmax cardheight">
                             <div class="activitiespicboxsmall widthmax picheight">
                                 <img class="activitiespic widthmax" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp">
                             </div>
@@ -247,7 +249,30 @@
             </section>
         </main>
         <footer>
-
+            <nav class="navfooter flex">
+                <div class="navbox flex">
+                    <h3>A propos</h3>
+                    <ul class="footerul">
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="navbox flex">
+                    <h3>Nos hébergements</h3>
+                    <ul class="footerul">
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="navbox flex">
+                    <h3>Assistance</h3>
+                    <ul class="footerul">
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </nav>
         </footer>
     </body>
 </html>

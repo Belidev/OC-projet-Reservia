@@ -3,7 +3,7 @@
     margin: 0px;
     font-family: "raleway";
 }
-body{
+main{
     padding: 0 50px 0 50px
 }
 @font-face {
@@ -23,17 +23,17 @@ li{
 }
 /*responsive body*/
 @media screen and (max-width: 1280px){
-    body{
+    main{
         font-size: 0.9em;
     }
 }
     @media screen and (max-width:1024px){
-        body{
+        main{
             padding: 0 25px 0 25px;
     }
 }
 @media screen and (max-width: 817px){
-    body{
+    main{
         padding: 0;
         font-size: 0.9em;
     }
@@ -210,14 +210,9 @@ h1{
     font-weight: bold;
 }
 .filterpic{
-    justify-content: center;
-    align-items: center;
+    display:contents;
     font-size: 1.2em;
-    width: 2.4em;
-    height: 2.4em;
     background-color: #DEEBFF;
-    border-radius: 50%;
-    margin-right: 10px;
 }
 .filter{
     align-items: center;
@@ -227,10 +222,20 @@ h1{
     padding-right: 15px;
     margin: 5px;
 }
-.filter:hover .filterpic{
+.filterpicbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4em;
+    height: 2.4em;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    
+}
+.filter:hover .filterpicbox{
     background-color: #0065FC;
     color: white;
-    font-size: 1.3em;
 }
 .filter:hover{
     background-color: #DEEBFF;
@@ -252,13 +257,16 @@ h1{
     margin-top: 30px;
 }
 /*filtersarea responsive*/
+
+@media screen and (max-width: 1024px){
+    .filtersbox{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 817px){
     .filtersarea h2{
         width: 100%;
         margin-bottom: 5px;
-    }
-    .filtersbox{
-        width: 100%;
     }
     .filter{
         padding-right: 10px;
@@ -481,6 +489,9 @@ h1{
     width:100%;
 }
 @media screen and (max-width: 1024px){
+    .activitiessection{
+        height: 1200px;
+    }
     .activitiesarticle{
         flex-wrap: wrap;
     }
@@ -498,6 +509,9 @@ h1{
     }
 }
 @media screen and (max-width: 525px){
+    .activitiessection{
+        height: 1650px;
+    }
     .activitiessection h2{
         margin-left: 10px;
     }
@@ -523,5 +537,43 @@ h1{
     }
     .picheight{
         height: 200px;
+    }
+}
+
+/*footer*/
+
+.navfooter{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+}
+.navbox{
+    flex-direction: column;
+    width: 33%;
+}
+.navbox li{
+    margin: 15px 0 15px 0
+}
+.navbox a:hover{
+    font-weight: bold;
+}
+
+/*footer responsive*/
+
+@media screen and (max-width:1024px){
+    .navfooter{
+        padding: 0 25px 0 25px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .navbox{
+        margin-top: 25px;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+@media screen and (max-width:525px){
+    .navbox{
+        width: 100%;
     }
 }
