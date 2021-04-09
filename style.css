@@ -212,7 +212,6 @@ h1{
 .filterpic{
     display:contents;
     font-size: 1.2em;
-    background-color: #DEEBFF;
 }
 .filter{
     align-items: center;
@@ -235,8 +234,10 @@ h1{
 }
 .filter:hover .filterpicbox{
     background-color: #0065FC;
-    color: white;
 }
+.filter:hover .filterpic{
+    color: white;
+    }
 .filter:hover{
     color: #0065FC;
     font-style: italic;
@@ -312,7 +313,7 @@ h1{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-.loadgingarticlecardtext{
+.lodgingarticlecardtext{
     flex-direction: column;
     justify-content: space-evenly;
     height: 45%;
@@ -488,8 +489,8 @@ h1{
     width:100%;
 }
 @media screen and (max-width: 1024px){
-    .activitiessection{
-        height: 1200px;
+    .activitiesarticle{
+        height: auto;
     }
     .activitiesarticle{
         flex-wrap: wrap;
@@ -500,17 +501,16 @@ h1{
     }
     .activitiesbox{
         width: 47%;
+        height: 550px;
     }
 }
 @media screen and (max-width: 817px){
     .activitiesarticle{
+        height: auto;
         justify-content: space-evenly;
     }
 }
 @media screen and (max-width: 525px){
-    .activitiessection{
-        height: 1650px;
-    }
     .activitiessection h2{
         margin-left: 10px;
     }
