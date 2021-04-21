@@ -550,7 +550,7 @@ h1{
     width: 33%;
 }
 .navbox li{
-    margin: 15px 0 15px 0
+    margin: 15px 0 15px 0;
 }
 .navbox a:hover{
     font-weight: bold;
@@ -560,7 +560,7 @@ h1{
 
 @media screen and (max-width:1024px){
     .navfooter{
-        padding: 0 25px 0 25px;
+        padding: 0px;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
@@ -573,5 +573,9 @@ h1{
 @media screen and (max-width:525px){
     .navbox{
         width: 100%;
+        padding-left: 15px;
+    }
+    .navbox li{
+        margin: 15px 0 15px 0;
     }
 }
