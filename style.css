@@ -60,10 +60,7 @@ header{
 .navheaderlinks:hover{
     font-weight: bold;
 }
-.group1{
-    padding: 40px 40px 0 40px;
-}
-.group2{
+.group1, .group2{
     padding: 40px 40px 0 40px;
 }
 .lodgingheader{
@@ -107,7 +104,7 @@ header{
     }
     .signup{
         position: absolute;
-        top: 5px;
+        top: 0px;
         right: 0px;
     }
     nav a:hover{
