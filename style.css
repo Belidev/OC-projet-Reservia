@@ -301,7 +301,7 @@ h1{
     border-radius: 20px;
     padding: 5px;
     margin-bottom: 30px;
-    box-shadow: grey 3px 3px 3px 3px;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
 }
 .lodgingarticlepicbox{
     width: 100%;
@@ -368,7 +368,7 @@ h1{
     padding: 5px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: grey 3px 3px 3px 3px;;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
 }
 .populararticlepicbox{
     width: 55%;
@@ -482,7 +482,7 @@ h1{
 }
 .bordershadow{
     border-radius: 20px;
-    box-shadow: grey 3px 3px 3px 3px;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
 }
 .widthmax{
     width:100%;
@@ -490,9 +490,10 @@ h1{
 @media screen and (max-width: 1024px){
     .activitiesarticle{
         height: auto;
-    }
-    .activitiesarticle{
         flex-wrap: wrap;
+    }
+    #activitiestitle{
+        padding-left: 3%;
     }
     .activitiescardbig{
         width:47%;
@@ -510,9 +511,6 @@ h1{
     }
 }
 @media screen and (max-width: 525px){
-    .activitiessection h2{
-        margin-left: 10px;
-    }
     .activitiesarticle{
         align-items: stretch;
     }
@@ -560,20 +558,20 @@ h1{
 
 @media screen and (max-width:1024px){
     .navfooter{
-        padding: 0px;
+        padding: 0;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
     .navbox{
         margin-top: 25px;
+        padding-left: 3%;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
     }
 }
 @media screen and (max-width:525px){
     .navbox{
-        width: 100%;
-        padding-left: 15px;
+        width: 90%;
     }
     .navbox li{
         margin: 15px 0 15px 0;
